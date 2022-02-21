@@ -4,10 +4,18 @@
   "description": "made by following the tutorials https://www.youtube.com/playlist?list=PL9aKtVrF05DyEwK5kdvzrYXFdpZfj1dsG",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
-  "lint-staged":{
-    "*.js": ["standard"]
+  "lint-staged": {
+    "*.js": [
+      "standard"
+    ]
+  },
+  "husky": {
+    "hooks":{
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
@@ -22,5 +30,8 @@
   "devDependencies": {
     "lint-staged": "^12.3.4",
     "standard": "^16.0.4"
+  },
+  "dependencies": {
+    "husky": "^4.3.8"
   }
 }
