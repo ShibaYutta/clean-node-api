@@ -7,7 +7,3 @@ const list = [
     "world",
 ]
 
-
-
-
-
