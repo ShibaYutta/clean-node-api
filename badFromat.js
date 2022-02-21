@@ -2,7 +2,7 @@ function test(){
     return {a:1};
 };
 
-const list = [
+const list = [ 
     "hello",
     "world",
 ]
