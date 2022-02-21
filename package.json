@@ -4,7 +4,7 @@
   "description": "made by following the tutorials https://www.youtube.com/playlist?list=PL9aKtVrF05DyEwK5kdvzrYXFdpZfj1dsG",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
@@ -30,6 +30,7 @@
   "homepage": "https://github.com/ShibaYutta/clean-node-api#readme",
   "devDependencies": {
     "husky": "^7.0.4",
+    "jest": "^27.5.1",
     "lint-staged": "^12.3.4",
     "standard": "^16.0.4"
   }
