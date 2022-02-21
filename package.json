@@ -1,0 +1,19 @@
+{
+  "name": "clean-node-api",
+  "version": "1.0.0",
+  "description": "made by following the tutorials https://www.youtube.com/playlist?list=PL9aKtVrF05DyEwK5kdvzrYXFdpZfj1dsG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShibaYutta/clean-node-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShibaYutta/clean-node-api/issues"
+  },
+  "homepage": "https://github.com/ShibaYutta/clean-node-api#readme"
+}
