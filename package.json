@@ -4,7 +4,8 @@
   "description": "made by following the tutorials https://www.youtube.com/playlist?list=PL9aKtVrF05DyEwK5kdvzrYXFdpZfj1dsG",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll",
+    "test:staged":"jest",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
@@ -13,7 +14,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "standard"
+      "standard",
+      "npm run test:staged"
     ]
   },
   "husky": {
