@@ -8,6 +8,9 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
+  "standard":{
+    "env":["jest"]
+  },
   "lint-staged": {
     "*.js": [
       "standard"
