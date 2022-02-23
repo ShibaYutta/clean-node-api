@@ -1,4 +1,5 @@
 node_modules/
+
 covarege/
 coverage/clover.xml
 coverage/coverage-final.json
