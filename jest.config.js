@@ -1,6 +1,6 @@
 
 module.exports = {
-  collectCoverage: true,
+  collectCoverage: false,
   coverageDirectory: 'coverage',
   coverageProvider: 'v8'
 }

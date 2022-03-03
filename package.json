@@ -4,7 +4,7 @@
   "description": "made by following the tutorials https://www.youtube.com/playlist?list=PL9aKtVrF05DyEwK5kdvzrYXFdpZfj1dsG",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --silent --noStackTrace",
+    "test": "jest  --watch --silent --noStackTrace",
     "test:staged":"jest --passWithNoTests --silent --noStackTrace",
     "test:ci":"jest --coverage --silent --noStackTrace",
     "prepare": "husky install",
