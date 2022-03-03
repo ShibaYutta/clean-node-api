@@ -4,8 +4,9 @@
   "description": "made by following the tutorials https://www.youtube.com/playlist?list=PL9aKtVrF05DyEwK5kdvzrYXFdpZfj1dsG",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "test:staged":"jest --passWithNoTests",
+    "test": "jest --watch --silent --noStackTrace",
+    "test:staged":"jest --passWithNoTests --silent --noStackTrace",
+    "test:ci":"jest --coverage --silent --noStackTrace",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
@@ -20,7 +21,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push":"npm run test:ci"
     }
   },
   "repository": {
