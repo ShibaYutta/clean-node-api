@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "jest  --watch --silent --noStackTrace",
-    "test:staged":"jest --passWithNoTests --silent --noStackTrace",
-    "test:ci":"jest --coverage[true] --noStackTrace",
+    "test:staged": "jest --passWithNoTests --silent --noStackTrace",
+    "test:ci": "jest --coverage[true] --noStackTrace",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
-  "standard":{
-    "env":["jest"]
+  "standard": {
+    "env": [
+      "jest"
+    ]
   },
   "lint-staged": {
     "*.js": [
@@ -22,7 +24,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push":"npm run test:ci"
+      "pre-push": "npm run test:ci"
     }
   },
   "repository": {
