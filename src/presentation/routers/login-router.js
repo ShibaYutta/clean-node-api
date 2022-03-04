@@ -28,7 +28,6 @@ module.exports = class LoginRouter {
     } catch (error) {
       console.error(error)
       return httpResponse.serverError()
-      // pls pre-push work
     }
   }
 }
